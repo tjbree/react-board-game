@@ -1,0 +1,71 @@
+body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  max-width: 960px;
+  margin: 20px auto;
+  background-color: azure;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 2px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 45px;
+  height: 45px;
+  width: 45px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+}
+
+.square.shade {
+  background: pink;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.game-info {
+  margin-top: 50px;
+  line-height: 1.6;
+}
+
+.game-info button {
+  width: 120px;
+  height: 20px;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 22px;
+  text-align: center;
+}
